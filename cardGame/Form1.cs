@@ -31,22 +31,23 @@ namespace cardGame
         }
    private void pictureBox4_Click(object sender, EventArgs e)
         {
-            cvcVisible = true;
-
-            pictureBox3.Visible = true;   
-            pictureBox4.Visible = false;  
-
-            label4.Text = textBox3.Text;  
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
+            
             cvcVisible = false;
 
             pictureBox3.Visible = false;  
             pictureBox4.Visible = true;   
 
-            label4.Text = "CVC";          
+            label4.Text = "CVC"; 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            cvcVisible = true;
+
+            pictureBox3.Visible = true;   
+            pictureBox4.Visible = false;  
+
+            label4.Text = textBox3.Text;      
         }
 
         private void button1_Click(object sender, EventArgs e)
